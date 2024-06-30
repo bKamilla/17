@@ -1,3 +1,4 @@
+# Моя первая
 count = 0
 with open("input.txt","r") as input_file:
     for line in input_file:
@@ -8,7 +9,7 @@ with open("input.txt","r") as input_file:
                 counts[number] += 1
             else:
                 count[number] = 1
-        count_values = lst(count.values())
+        count_values = list(count.values())
         count_values.sort()
         if count_values == [1, 1, 3, 5]:
             avg = sum(numbers) / 10
@@ -18,7 +19,7 @@ with open("input.txt","r") as input_file:
                     unique_elements.append(number)
             for number in unique_elements:
                 if number in unique_elements:
-                    if number > average:
+                    if number > avg:
                         count += 1
                         break
 print(count)
